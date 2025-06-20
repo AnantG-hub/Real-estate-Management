@@ -1,0 +1,65 @@
+
+body{
+    background: center;
+    margin: 10;
+    padding: 20;
+    background: url(service.jpg);
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+.contact .boxo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
+.contact .boxo .icon{
+    flex: 1 1 10rem;
+    padding: 2rem;
+    border: 0.1rem solid;
+    border-radius: 0.7rem;
+    background-color: #ccc;
+    box-shadow: 1rem #333;
+    text-align: center;
+}
+.contact .boxo .icon h2{
+    font-size: 2rem;
+    color: #555;
+}
+.contact .box{
+    border: 1px solid #ccc;
+    box-shadow: 0.5rem;
+    border-radius: 4px;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 4rem;
+    padding: 2rem;
+}
+.contact .box form{
+    flex: 1 1 25rem;
+    padding: 1rem;
+    border: 0.2rem solid #ccc;
+}
+.contact .box .map{
+    flex: 1 1 30rem;
+    width: 100%;
+    height: 48rem;
+    padding: 0.1rem;
+    border: 0.2rem;
+    resize:none;
+}
+.contact .box .inputbox textarea{
+    font-size: 1rem;
+}
+.contact.box  h2{
+color: #333;
+font-weight: 500;
+font-size: 2rem;
+margin-bottom: 10px;
+}
+.contact.box  .inputbox{
+    color: aqua;
+    padding-bottom: 10px;
+}
+.contact.box .btn{
+    color: red;
+}

@@ -1,0 +1,68 @@
+#import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+:root{
+    color: #555;
+}
+}
+.{
+    font-family: 'nunito',sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7px; 
+}
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    background: white;
+    padding: 1.5em 9%;
+    box-shadow: 0 .5rem 1rem rgb(red, green, blue,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .logo{
+    font-weight: bolder;
+    font-size: medium;
+    color:#555;
+}
+header.logo span{
+color:#444;
+}
+header.navbar .a{
+    color: #555;
+    font-size: medium;
+    padding: 0 1.5rem;
+}
+header .navbar .a:hover{
+    color:#555;
+
+}
+header .icons #menu bars,
+header .icons a{
+    height: 5rem;
+    line-height: normal;
+    width: 5rem;
+    font-size: 2rem;
+    margin-right: 5rem;
+    border-radius: 5rem;
+    color: aquamarine;
+    background: #555;
+    text-align: center;
+
+} 
+
+header .icons #menu bars:hover,
+header .icons .a:hover{
+    background-color: aqua;
+    
+
+}

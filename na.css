@@ -1,0 +1,101 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    background:wheat;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+  }
+  .container {
+    position:relative;
+  }
+  .mySlides {
+    display:grid;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 16px;
+    margin-top: -100px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next {
+    right: 5;
+    border-radius: 5px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    margin-right:50%;
+    padding: 1px 2px;
+    color: white;
+  }
+  .row{
+    align-items: center;
+  }
+  .row:after {
+    display: table;
+    clear: both;
+  }
+  .column {
+    float:left;
+    width: 10%;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .icon{
+    margin-top: -2rem;
+    color:red;
+  }
+  .Discription{
+    border: 0.1rem solid #555;
+    background: #999;
+    display: flex;
+    flex-wrap: wrap;
+    gap:3rem
+  }
+  .Discription p{
+    flex: 1 1 10rem;
+    padding: 0.3rem;
+    display:block;
+    font-size: 1.3rem;
+    text-align: left;
+    color: #222;
+    padding: 0.3rem;
+  }
+  .blueprint{
+    margin: 1rem;
+    padding: 0;
+    text-align: left;
+    color:red;
+  }
