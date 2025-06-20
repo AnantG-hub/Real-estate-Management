@@ -1,0 +1,67 @@
+
+.Agent .boxx{
+    background: url(agentt.jpg);
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+}
+.Agent .boxx .box{
+    flex: 1 1 30rem;
+   background: whitesmoke;
+   text-align: center;
+   border:  0.1rem solid#555;
+   margin-top: -1rem;
+   box-shadow: 0.5rem ;
+   border-radius: 0.6rem;
+   padding: 0.6rem;
+   position:-ms-page;
+   width: 20rem;
+   overflow: hidden;
+}
+.Agent .boxx .box img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 0.1rem solid;
+    box-shadow: 1rem #555;
+    position: relative;
+}
+.Agent .boxx .box h2{
+    font-size: 2rem;
+    left: 1rem;
+    color:blue;
+} 
+.Agent .boxx .box span{
+    font-size:2rem;
+    color: var(red);
+}
+.Agent .boxx .box .app-icon a{
+    border: 0.1rem solid;
+    border: #555;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    margin: 0.4rem;
+    height: 6rem;
+    column-width: 4rem;
+    line-height: 4rem;
+    background:whitesmoke;
+    color:purple;
+}
+.Agent .boxx .box .fa-envelope{
+    position:relative;
+    top: 2rem;left: 2rem;
+    color: #555;
+    font-size: 2rem;
+}
+.Agent .boxx .box .fa-envelope:hover{
+    color: var(--light-red);
+}
+.Agent .boxx .box .fa-phone{
+    position:relative;
+    top: 2rem; left: 20rem;
+    color:#555;
+    font-size: 2rem;
+}
+.Agent .boxx .box .fa-phone:hover{
+    color: var(--light-red);
+}

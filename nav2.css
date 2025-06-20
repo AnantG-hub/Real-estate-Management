@@ -1,0 +1,295 @@
+.myBtnContainer{
+    padding: 0;
+    margin: 0;
+    filter: drop-shadow(#333);
+    overflow: hidden;
+    cursor: pointer;
+    color: #555;
+    text-transform: uppercase;
+    display: inline-block;
+    background: #c0c0c0;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.2rem;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    text-align: right;
+  }
+.filterDiv {
+  float: left;
+  margin: 10px;
+
+  display: none;
+  width: 30%;
+  height: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.boxo {
+  display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: whitesmoke;
+}
+.boxo .box{
+    border: .2rem solid rgb(red, green, blue);
+    box-shadow: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    background:whitesmoke;
+    font-weight: 600;
+    flex: 1 1 30rem;
+    z-index:1;
+    transition:0.2s linear;
+}
+.boxo .box .icon a{
+  font-size: 1rem;
+    border-radius: 0.5rem;
+}
+ .boxo .box .buttons a{
+    position: relative;
+    padding:4px 40px ;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    background: #888;
+}
+ .boxo .box .location i{ 
+color:red;
+}
+ .boxo .box .detail i{
+    color: blue;
+}
+  .boxo .box .img-con{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+}
+  .boxo .box .img-con img{
+    object-fit: cover;
+    font-weight: 600;
+    transition: .2s linear;
+    width: 100%;
+    height: 100%;
+ }
+
+.boxo .box .img-con img{
+    transform: scale(1.1);
+}
+ .boxo .box .img-con .info{
+    position: absolute;
+    top: 1rem;
+    left: 0%;
+    display: flex;
+}
+ .boxo .box .img-con .info h3{
+    font-weight: 600;
+    font-size: 1rem;
+    color: aliceblue;
+    background: #222;
+    border-radius:0.4rem;
+    padding: 0.6rem 1.5rem;
+    margin: 1.5rem;
+}
+ .boxo .box .img-con .icon{
+    position: absolute;
+    bottom:0.3rem;
+    right: 5%;
+    display: flex;
+}
+ .boxo .box .img-con .icon a{
+    font-size: 0.5rem;
+    color: aliceblue;
+    font-weight: 600;
+    display: flex;
+    background: #222;
+    margin-right: 1rem;
+    padding: 0.8rem;
+}
+ .boxo .box .img-con .icon a h3{
+    font-weight: 600;
+    padding-left: 0.5rem;
+
+}
+ .boxo .box .img-con .icon a:hover{
+    background:var(--light-red);
+    color:whitesmoke;
+}
+ .boxo .box .content{
+    padding: 1.6rem;
+}
+ .boxo .box .content .price{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+ .boxo .box .content .price h3{
+    color:palevioletred;
+    font-size: 2.1rem;
+    margin-right: auto;
+}
+ .boxo .box .content .price a{
+    color:plum;
+    font-size: 1.5rem;
+    margin-right:5%;
+}
+.cart button{
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    text-transform: capitalize;
+    color:blue;
+    border: none;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 9px #222;
+    z-index: 1;
+    text-shadow: #222;
+    margin-left: 10rem;
+    margin-top: -4cqmax;
+    text-align: center;
+}
+.cart button:hover{
+    background-color: yellow;
+}
+.cart button:active{
+    color: yellowgreen;
+    box-shadow: 0 0.4rem #888;
+    transform: translate(5px);
+}
+ .boxo .box .location{
+    margin-top: -3.5cqmax;
+    font-size: 1.3rem;
+}
+.price button{
+    border: none;
+    font-size: 1.4rem;
+}
+button.fav {
+    margin: 0;
+    padding: 0;
+    color:red;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    position: relative;
+    outline: none;
+    border: none;
+  }
+  button.fav i{
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    position: relative;
+    animation: anim 0.4s ease-in-out;
+    -webkit-animation: anim 0.4s ease-in-out;
+  }
+  @keyframes anim {
+    100% {
+      transform: rotate(-15deg) scale(1.4);
+      -webkit-transform: rotate(-15deg) scale(1.4);
+      -moz-transform: rotate(-15deg) scale(1.4);
+      -ms-transform: rotate(-15deg) scale(1.4);
+      -o-transform: rotate(-15deg) scale(1.4);
+      filter: blur(0.5px);
+      -webkit-filter: blur(0.5px);
+    }}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.rate{
+  text-align: right;
+  margin-top: -1rem;
+}
+.popup {
+  position:fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.popup-content{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.popup-content .center{
+  height: 100px;
+  width: 400px;
+  background: #555;
+  text-align: center;
+}
+ .center label{
+  font-size: 37px;
+  color: #888;
+}
+.center label::before{
+    content: '⭐';
+    color:#ddd;
+}
+.center .result ::before{
+  font-size: 1.8rem;
+  content: '';
+  color:red ;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+}
+.center input:checked ~ .result ::before{
+  display: block;
+}
+.center #five:checked ~ .result::before{
+  content: "I hate It..!!😒";
+}
+.center #four:checked ~ .result::before{
+  content: "It Average..!!👍";
+}
+.center #three:checked ~ .result::before{
+  content: "It Good..!!🫡";
+}
+.center #two:checked ~ .result::before{
+  content: "It is better..!!😊";
+}
+.center #one:checked ~ .result::before{
+  content: "I Love It..!!😍";
+}
+.popup-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 30%;
+  font-weight: bolder;
+}
+.popup-content button {
+  display: block;
+  margin: 0 auto;
+}
+.show {
+  display: block;
+}
